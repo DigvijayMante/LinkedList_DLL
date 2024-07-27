@@ -1,6 +1,7 @@
 // #include"Singly_linked_list.h"
 //#include"SinglyCircularLinkedList.h"
- #include"DoublyLinkedList.h"
+//#include"DoublyLinkedList.h"
+#include"DoublyCircularLinkedList.h"
 
 int main(void)
 {
@@ -8,21 +9,22 @@ int main(void)
     short iDelData = 0;
     // Linked_list objLinked_list;
 //    LinkedList objDoublyLinkedList;
-    DoublyLinkedList objDoublyLinkedList;
+    DoublyCircularLinkedList objDoublyLinkedList;
 
     for(int iCounter = 10 ; iCounter <= 70 ; iCounter += 10)
     {
-        objDoublyLinkedList.InsertFirst(iCounter);
+        objDoublyLinkedList.InsertLast(iCounter);
     }
     
     objDoublyLinkedList.DisplayList();
-    objDoublyLinkedList.InsertAtPosition(55,0);
+    std::cout<<"\n Countt is "<<objDoublyLinkedList.ListNodeCount();
+    objDoublyLinkedList.InsertAtPosition(55,10);
     std::cout<<"\n\n"; 
     objDoublyLinkedList.DisplayList();
 
 
-    objDoublyLinkedList.DeleteFirst();
-    std::cout << "\n\n";
+    
+    std::cout << "\n\nDelete First is "<< objDoublyLinkedList.DeleteFirst();
     objDoublyLinkedList.DisplayList();
 
     iDelData = objDoublyLinkedList.DeleteAtPosition(3);

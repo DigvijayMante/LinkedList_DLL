@@ -139,12 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DoublyCircularLinkedList.cpp" />
     <ClCompile Include="DoublyLinkedList.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="SinglyCircularLinkedList.cpp" />
     <ClCompile Include="Singly_linked_list.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DoublyCircularLinkedList.h" />
     <ClInclude Include="DoublyLinkedList.h" />
     <ClInclude Include="SinglyCircularLinkedList.h" />
     <ClInclude Include="Singly_linked_list.h" />

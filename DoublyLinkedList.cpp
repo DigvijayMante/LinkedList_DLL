@@ -6,7 +6,7 @@ DoublyLinkedList::DoublyLinkedList()
 }
 DoublyLinkedList::~DoublyLinkedList()
 {
-
+    MemoryFree();
 }
 
 void DoublyLinkedList::InsertFirst(int _inputData)
@@ -205,6 +205,7 @@ void DoublyLinkedList::PhysicalReverse()
 
         pPrev = pCurr;
         pCurr = pNext;
+        pPrev->pPrev = pCurr;
     }
     m_pHead =pPrev;
 }
